@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Countries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Country" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code">
+              <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value = "3"/>
+                    <xs:maxLength value = "3"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name">
+              <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              <xs:element type="xs:string" name="Continent"/>
+              <xs:element type="xs:string" name="Region"/>
+              <xs:element name="SurfaceArea">
+              <xs:simpleType>
+                  <xs:restriction base="xs:unsignedInt">
+                    <xs:minInclusive value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              <xs:element name="IndepYear">
+              <xs:simpleType>
+                  <xs:restriction base="xs:unsignedInt">
+                    <xs:minInclusive value="1"/>
+                    <xs:maxInclusive value="2020"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              <xs:element name="Population" default="0">
+              <xs:simpleType>
+                  <xs:restriction base="xs:unsignedInt">
+                    <xs:minInclusive value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              <xs:element name="LifeExpectancy">
+              <xs:simpleType>
+                  <xs:restriction base="xs:unsignedInt">
+                    <xs:minInclusive value="1"/>
+                    <xs:maxInclusive value="100"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              <xs:element name="GNP">
+              <xs:simpleType>
+                  <xs:restriction base="xs:unsignedInt">
+                    <xs:minInclusive value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              <xs:element name="GNPOld">
+              <xs:simpleType>
+                  <xs:restriction base="xs:unsignedInt">
+                    <xs:minInclusive value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              <xs:element type="xs:string" name="LocalName"/>
+              <xs:element type="xs:string" name="GovernmentForm"/>
+              <xs:element type="xs:string" name="HeadOfState"/>
+              <xs:element name="Capital">
+              <xs:simpleType>
+                  <xs:restriction base="xs:unsignedInt">
+                    <xs:minInclusive value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              <xs:element name="Code2">
+              <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value = "2"/>
+                    <xs:maxLength value = "2"/>
+                  </xs:restriction>
+                </xs:simpleType>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

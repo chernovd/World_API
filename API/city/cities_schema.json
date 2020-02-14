@@ -1,0 +1,119 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/cities.schema.json",
+  "type": "object",
+  "title": "Cities Info",
+  "required": [
+    "Cities"
+  ],
+  "properties": {
+    "Cities": {
+      "$id": "#/properties/Cities",
+      "type": "array",
+      "title": "Cities Schema",
+      "items": {
+        "$id": "#/properties/Cities/items",
+        "type": "object",
+        "title": "City Info",
+        "required": [
+          "City"
+        ],
+        "properties": {
+          "City": {
+            "$id": "#/properties/Cities/items/properties/City",
+            "type": "object",
+            "title": "City Object",
+            "required": [
+              "ID",
+              "Name",
+              "CountryCode",
+              "Country",
+              "Population",
+              "District",
+              "Language",
+              "Lang_Percentage"
+            ],
+            "properties":  {
+              "ID": {
+                "$id": "#/properties/City/properties/ID",
+                "type": "integer",
+                "title": "The unique ID of the city",
+                "minimum": 0,
+                "default": 1,
+                "examples": [1]
+              },
+              "Name": {
+                "$id": "#/properties/City/properties/Name",
+                "type": "string",
+                "title": "Name of the city",
+                "minLength" : 1,
+                "default": "",
+                "examples": ["Kabul"]
+              },
+              "CountryCode": {
+                "$id": "#/properties/City/properties/CountryCode",
+                "type": "string",
+                "title": "Country Code",
+                "default": "AFG",
+        "maxLength" : 3,
+        "minLength" : 3,
+                "examples": ["AFG"]
+              },
+              "Country": {
+                "$id": "#/properties/City/properties/Country",
+                "type": "string",
+                "title": "Country name",
+                "minLength" : 1,
+                "default": "",
+                "examples": ["Afghanistan"]
+              },
+              "Population": {
+                "$id": "#/properties/City/properties/Population",
+                "type": "integer",
+                "title": "Population amount",
+                "default": 0,
+        "minimum": 0,
+                "examples": [1780000]
+              },
+              "District": {
+                "$id": "#/properties/City/properties/District",
+                "type": "string",
+                "title": "District name",
+                "minLength" : 1,
+                "default": "",
+                "examples": ["Kabol"]
+              },
+              "Language": {
+                "$id": "#/properties/City/properties/Language",
+                "type": "array",
+                "title": "Language Schema",
+                "items": {
+                  "$id": "#/properties/City/properties/Language/items",
+                  "type": "string",
+                  "title": "Languages",
+                  "default": "English",
+                  "examples": ["Pashto", "Dari", "Uzbek", "Turkmenian", "Balochi"]
+                }
+              },
+              "Lang_Percentage": {
+                "$id": "#/properties/City/properties/Lang_Percentage",
+                "type": "array",
+                "title": "Percentage Schema",
+                "items": {
+                  "$id": "#/properties/City/properties/Lang_Percentage/items",
+                  "type": "number",
+                  "title": "Percentage of each language",
+                  "minimum": 0.0,
+                  "maximum": 100.0,
+                  "default": 0.0,
+                  "examples": [52.4, 32.1, 8.8, 1.9, 0.9]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/countries.schema.json",
+    "type": "object",
+    "title": "Countries Info",
+    "required": [
+      "Countries"
+    ],
+    "properties": {
+      "Countries": {
+        "$id": "#/properties/Countries",
+        "type": "array",
+        "title": "The Countries Schema",
+        "items": {
+          "$id": "#/properties/Countries/items",
+          "type": "object",
+          "title": "Country Info",
+          "required": [
+            "Country"
+          ],
+          "properties": {
+            "Country": {
+              "$id": "#/properties/Countries/items/properties/Country",
+              "type": "object",
+              "title": "The Country Schema",
+              "required": [
+                "Code",
+                "Name",
+                "Continent",
+                "Region",
+                "SurfaceArea",
+                "IndepYear",
+                "Population",
+                "LifeExpectancy",
+                "GNP",
+                "GNPOld",
+                "LocalName",
+                "GovernmentForm",
+                "HeadOfState",
+                "Capital",
+                "Code2"
+              ],
+              "properties":  {
+                "Code": {
+                  "$id": "#/properties/Country/properties/Code",
+                  "type": "string",
+                  "title": "Country Code",
+                  "maxLength" : 3,
+				          "minLength" : 3,
+                  "default": "",
+                  "examples": [
+                    "ESP"
+                  ]
+                },
+                "Name": {
+                  "$id": "#/properties/Country/properties/Name",
+                  "type": "string",
+                  "title": "Country Name",
+                  "minLength" : 1,
+                  "default": "",
+                  "examples": [
+                    "Spain"
+                  ]
+                },
+                "Continent": {
+                  "$id": "#/properties/Country/properties/Continent",
+                  "type": "string",
+                  "title": "Continent name",
+                  "minLength" : 1,
+                  "default": "",
+                  "examples": [
+                    "Europe"
+                  ]
+                },
+                "Region": {
+                  "$id": "#/properties/Country/properties/Region",
+                  "type": "string",
+                  "title": "Region name",
+                  "minLength" : 1,
+                  "default": "",
+                  "examples": [
+                    "Southern Europe"
+                  ]
+                },
+                "SurfaceArea": {
+                  "$id": "#/properties/Country/properties/SurfaceArea",
+                  "type": "integer",
+                  "title": "Surface area",
+                  "minimum": 0,
+                  "default": "",
+                  "examples": [
+                    505992
+                  ]
+                },
+                "IndepYear": {
+                  "$id": "#/properties/Country/properties/IndepYear",
+                  "type": "integer",
+                  "title": "Indep year",
+                  "minimum": 0,
+                  "maximum": 2020,
+                  "default": "",
+                  "examples": [
+                    "1492"
+                  ]
+                },
+                "Population": {
+                  "$id": "#/properties/Country/properties/Population",
+                  "type": "integer",
+                  "title": "Population amount",
+                  "minimum": 0,
+                  "default": "",
+                  "examples": [
+                    39441700
+                  ]
+                },
+                "LifeExpectancy": {
+                  "$id": "#/properties/Country/properties/LifeExpectancy",
+                  "type": "integer",
+                  "title": "The Lifeexpectancy Schema",
+                  "minimum": 0,
+                  "maximum": 100,  
+                  "default": "",
+                  "examples": [
+                    "79"
+                  ]
+                },
+                "GNP": {
+                  "$id": "#/properties/Country/properties/GNP",
+                  "type": "integer",
+                  "title": "Gnp",
+                  "minimum": 0,
+                  "default": "",
+                  "examples": [
+                    553233
+                  ]
+                },
+                "GNPOld": {
+                  "$id": "#/properties/Country/properties/GNPOld",
+                  "type": "integer",
+                  "title": "Gnpold",
+                  "minimum": 0,
+                  "default": "",
+                  "examples": [
+                    532031
+                  ]
+                },
+                "LocalName": {
+                  "$id": "#/properties/Country/properties/LocalName",
+                  "type": "string",
+                  "title": "Local name",
+                  "minLength" : 1,
+                  "default": "",
+                  "examples": [
+                    "España"
+                  ]
+                },
+                "GovernmentForm": {
+                  "$id": "#/properties/Country/properties/GovernmentForm",
+                  "type": "string",
+                  "title": "The Governmentform Schema",
+                  "minLength" : 1,
+                  "default": "",
+                  "examples": [
+                    "Constitutional Monarchy"
+                  ]
+                },
+                "HeadOfState": {
+                  "$id": "#/properties/Country/properties/HeadOfState",
+                  "type": "string",
+                  "title": "Head of state",
+                  "minLength" : 1,
+                  "default": "",
+                  "examples": [
+                    "Juan Carlos I"
+                  ]
+                },
+                "Capital": {
+                  "$id": "#/properties/Country/properties/Capital",
+                  "type": "integer",
+                  "title": "Capital city",
+                  "default": "",
+                  "examples": [
+                    653
+                  ] 
+                },
+                "Code2": {
+                  "$id": "#/properties/Country/properties/Code2",
+                  "type": "string",
+                  "title": "Country Code 2",
+                  "maxLength" : 2,
+				          "minLength" : 2,
+                  "default": "",
+                  "examples": [
+                    "ES"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

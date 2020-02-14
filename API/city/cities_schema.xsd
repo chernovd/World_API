@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Cities">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="City" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" default="1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:short">
+                    <xs:minInclusive value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name">
+              <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CountryCode" default="AFG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value = "3"/>
+                    <xs:maxLength value = "3"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country">
+              <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:minLength value="1"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Population" type="xs:unsignedInt" default="0"/>
+              <xs:element name="District" type="xs:string"/>
+              <xs:element name="Languages" type="xs:string" default="English"/>
+              <xs:element name="Lang_Percentage" type="xs:string" default="0.0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

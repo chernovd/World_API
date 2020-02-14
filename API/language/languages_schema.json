@@ -1,0 +1,83 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/languages.schema.json",
+    "type": "object",
+    "title": "Languages Info",
+    "required": [
+      "Languages"
+    ],
+    "properties": {
+      "Languages": {
+        "$id": "#/properties/Languages",
+        "type": "array",
+        "title": "All Languages",
+        "items": {
+          "$id": "#/properties/Languages/items",
+          "type": "object",
+          "title": "Language Info",
+          "required": [
+            "Language"
+          ],
+          "properties": {
+            "Language": {
+              "$id": "#/properties/Languages/items/properties/Language",
+              "type": "object",
+              "title": "The Language Schema",
+              "required": [
+                "CountryCode",
+                "Language",
+                "IsOfficial",
+                "Percentage"
+              ],
+              "properties": {
+                "CountryCode": {
+                  "$id": "#/properties/Languages/items/properties/Language/properties/CountryCode",
+                  "type": "string",
+                  "title": "Country code",
+                  "maxLength" : 3,
+				          "minLength" : 3,
+                  "default": "",
+                  "examples": [
+                    "ZAF"
+                  ]
+                },
+                "Language": {
+                  "$id": "#/properties/Languages/items/properties/Language/properties/Language",
+                  "type": "string",
+                  "title": "Language name",
+                  "minLength" : 1,
+                  "default": "",
+                  "examples": [
+                    "Afrikaans"
+                  ]
+                },
+                "IsOfficial": {
+                  "$id": "#/properties/Languages/items/properties/Language/properties/IsOfficial",
+                  "type": "string",
+                  "title": "Official or not ",
+                  "maxLength" : 1,
+				          "minLength" : 1,
+                  "default": "",
+                  "examples": [
+                    "T"
+                  ]
+                },
+                "Percentage": {
+                  "$id": "#/properties/Languages/items/properties/Language/properties/Percentage",
+                  "type": "integer",
+                  "title": "Percentage of language",
+                  "default": "",
+                  "minimum": 0,
+                  "maximum": 100,
+                  "examples": [
+                    14
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
