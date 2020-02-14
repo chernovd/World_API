@@ -1,0 +1,17 @@
+C:\Users\Dima Chernov\source\repos\City\City\bin\Debug\City.exe.config
+C:\Users\Dima Chernov\source\repos\City\City\bin\Debug\City.exe
+C:\Users\Dima Chernov\source\repos\City\City\bin\Debug\City.pdb
+C:\Users\Dima Chernov\source\repos\City\City\obj\Debug\City.csprojAssemblyReference.cache
+C:\Users\Dima Chernov\source\repos\City\City\obj\Debug\City.Form1.resources
+C:\Users\Dima Chernov\source\repos\City\City\obj\Debug\City.Properties.Resources.resources
+C:\Users\Dima Chernov\source\repos\City\City\obj\Debug\City.csproj.GenerateResource.cache
+C:\Users\Dima Chernov\source\repos\City\City\obj\Debug\City.csproj.CoreCompileInputs.cache
+C:\Users\Dima Chernov\source\repos\City\City\obj\Debug\City.exe
+C:\Users\Dima Chernov\source\repos\City\City\obj\Debug\City.pdb
+C:\Users\Dima Chernov\source\repos\City\City\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dima Chernov\source\repos\City\City\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Dima Chernov\source\repos\City\City\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dima Chernov\source\repos\City\City\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Dima Chernov\source\repos\City\City\obj\Debug\City.csproj.CopyComplete
+C:\Users\Dima Chernov\source\repos\City\City\bin\Debug\Newtonsoft.Json.Schema.dll
+C:\Users\Dima Chernov\source\repos\City\City\bin\Debug\Newtonsoft.Json.Schema.xml
